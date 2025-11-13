@@ -166,6 +166,10 @@
             transform: translateY(30px);
         }
         
+        .nav-menu.active {
+            display: block !important; /* Override Tailwind's hidden */
+        }
+
         .emergency-bar {
             background: var(--primary-red);
             color: var(--pure-white);
@@ -317,7 +321,7 @@
                             <span class="text-2xl font-bold text-red-600">From ₹1,500</span>
                             <span class="text-sm text-gray-500">per service</span>
                         </div>
-                        <button onclick="openServiceRequest('Fire Extinguisher Services')" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                        <button onclick="window.location.href = 'tel:+918140852040'" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
                             Book Service
                         </button>
                     </div>
@@ -350,7 +354,7 @@
                             <span class="text-2xl font-bold text-red-600">From ₹5,000</span>
                             <span class="text-sm text-gray-500">per session</span>
                         </div>
-                        <button onclick="openServiceRequest('Safety Training')" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                        <button onclick="window.location.href = 'tel:+918140852040'" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
                             Book Service
                         </button>
                     </div>
@@ -379,7 +383,7 @@
                             <span class="text-2xl font-bold text-red-600">From ₹3,000</span>
                             <span class="text-sm text-gray-500">per call</span>
                         </div>
-                        <button onclick="openServiceRequest('Emergency Response')" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                        <button onclick="window.location.href = 'tel:+918140852040'" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors">
                             Book Service
                         </button>
                     </div>

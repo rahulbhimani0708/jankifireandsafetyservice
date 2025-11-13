@@ -13,13 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeNavigation() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = navMenu ? navMenu.querySelectorAll('a') : [];
 
     // Mobile menu toggle
     if (navToggle) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
         });
     }
 
@@ -27,7 +26,6 @@ function initializeNavigation() {
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
         });
     });
 

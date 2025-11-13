@@ -186,6 +186,10 @@
             transform: translateY(30px);
         }
         
+        .nav-menu.active {
+            display: block !important; /* Override Tailwind's hidden */
+        }
+
         @media (max-width: 768px) {
             .hero-section {
                 background-attachment: scroll;
